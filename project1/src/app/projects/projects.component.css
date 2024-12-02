@@ -1,0 +1,88 @@
+/* 
+.project-card {
+    border: 1px solid #ddd; 
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px; 
+  }
+  
+
+  .project-card:hover {
+    border-color: #80f57c; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  } */
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Align cards in natural flow */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding: 20px;
+  margin-bottom: 50px;
+  }
+  
+  .card {
+    background: #fafcfa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: calc(33.333% - 13.33px); /* Ensures 3 cards per row with consistent spacing */
+    box-shadow: 0 4px 6px rgba(164, 236, 236, 0.1);
+    margin-top: 20px; /* Add minimal spacing between rows */
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* For hover effects */
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .card p {
+    color: #160a0a;
+  }
+  
+  .card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #e2661f;
+    font-weight: bold;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Highlight effect on hover */
+  .card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    border-color: #b1f367; /* Change border color */
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .card {
+    width: calc(33.333% - 13.33px);
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
