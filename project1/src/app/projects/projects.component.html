@@ -1,0 +1,151 @@
+
+<!-- without api integration -->
+<!-- <div class="container py-4" style="font-family: 'Times New Roman', Times, serif; font-size: larger; color: black; margin-top: 100px;">
+    <div class="row">
+    
+        <div class="col-md-12">
+            <h1 class="mb-4 text-center" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 2.5rem; font-weight: bold;">Projects</h1>
+        </div>
+  
+        <div class="col-md-12">
+      
+            <p style="font-size: 1.5rem; font-weight: bold;">Gramadevata</p>
+            <p>
+                Built a simple calculator that can handle basic operations (addition, subtraction, multiplication, division) using Python’s built-in functions.
+                The skills I used in this are working with functions, conditional statements, and user input.
+            </p>
+
+        
+            <p style="font-size: 1.5rem; font-weight: bold;">To-Do List App</p>
+            <p>
+                Created a simple CLI to-do list where users can add, update, and remove tasks. Save tasks to a text file or JSON file for persistence.
+                Skills used for this project are file handling, list manipulation, and basic data persistence.
+            </p>
+
+         
+            <p style="font-size: 1.5rem; font-weight: bold;">Weather App (API Integration)</p>
+            <p>
+                Use a weather API (like OpenWeatherMap) to build a CLI app that fetches weather data based on a city name.
+                Skills used for this project are working with APIs, JSON handling, and command-line arguments.
+            </p>
+
+        
+            <p style="font-size: 1.5rem; font-weight: bold;">Personal Portfolio Website</p>
+            <p>
+                Develop a static or dynamic personal portfolio site using Django. Include information about yourself, projects, and contact details.
+            </p>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- with api integration -->
+
+
+<!-- <div class="container my-5 pt-5">
+    <h2 class="text-center mb-4" style="font-family: 'Times New Roman', serif; font-weight: bold;">Projects</h2>
+    <div class="row">
+      <div *ngFor="let project of ProjectDatas" class="col-md-6 col-lg-4 mb-4">
+        <div class="card h-100 shadow-sm project-card">
+          <div class="card-body">
+            <h3 class="card-title" style="font-family: Georgia, 'Times New Roman', Times, serif;font-size: x-larger;font-weight: bold;">{{ project.title }}</h3>
+            <p class="card-text" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large;">{{ project.description }}</p>
+            <p class="card-text" style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: large;">
+              <strong>Technologies:</strong>
+              <span class="me-1" *ngFor="let tech of project.technologies.split(',')">
+                {{ tech.trim() }}
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+
+
+
+
+
+   <div class="projects-container">
+    <h2 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; margin-bottom: 20px;">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3><strong>Gramadevata</strong></h3>
+        <h5><strong>Description:</strong></h5>
+        <p>Gramadevata is a platform to connect, communicate, and coordinate with our roots.</p>
+        <p>It focuses on:</p>
+        <ul>
+          <li>Temples categorized by type, priority, and location.</li>
+          <li>Goshalas classified into various categories and locations.</li>
+          <li>Events organized into multiple categories across different locations.</li>
+        </ul>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Designed and developed the database architecture using MySQL Workbench.</li>
+          <li>Created backend APIs using Django Rest Framework to support seamless operations.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Django, MySQL</p>
+        <a href="https://gramadevata.com/home" target="_blank">Visit Gramadevata</a>
+      </div>
+  
+      <div class="card">
+        <h3><strong>Om Sanatana</strong></h3>
+        <h5><strong>Description:</strong></h5>
+        <p>Om Sanatana is dedicated to organizing and categorizing data related to Sanatana Dharma, featuring:</p>
+        <ul>
+          <li>Comprehensive categorization of Sanatana Dharma data.</li>
+          <li>Training programs segmented by categories and locations.</li>
+        </ul>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Designed the database architecture with MySQL.</li>
+          <li>Developed and implemented backend APIs using Django Rest Framework.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Django, MySQL</p>
+        <a href="https://omsanatana.com/home" target="_blank">Visit Om Sanatana</a>
+      </div>
+  
+      <div class="card">
+        <h3><strong>The Hindu's World</strong></h3>
+        <h5><strong>Description:</strong></h5>
+        <p>The Hindu's World serves as a comprehensive directory for Hindu organizations and events, featuring:</p>
+        <ul>
+          <li>Hindu organizations segmented by category and location.</li>
+          <li>Events organized into diverse categories and locations.</li>
+          <li>Training programs categorized by type and location.</li>
+        </ul>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Developed robust backend APIs using Django Rest Framework to manage complex data structures and workflows.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Django</p>
+        <a href="https://thehindusworld.com/home" target="_blank">Visit The Hindu's World</a>
+      </div>
+  
+      <div class="card">
+        <h3><strong>Personal Portfolio</strong></h3>
+        <h5><strong>Description:</strong></h5>
+        <p>A dynamic and interactive personal portfolio showcasing skills, experience, and projects.</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Built the portfolio using AngularJS, focusing on responsive and user-friendly design.</li>
+        </ul>
+        <p><strong>Technologies:</strong> AngularJS</p>
+        <a href="#" target="_blank">View Portfolio</a>
+      </div>
+  
+      <div class="card">
+        <h3><strong>Weather App</strong></h3>
+        <h5><strong>Description:</strong></h5>
+        <p>Use a weather API (like OpenWeatherMap) to build a CLI app that fetches weather data based on a city name. Skills used for this project are working with APIs, JSON handling, and command-line arguments.</p>
+        <p><strong>Responsibilities:</strong></p>
+        <ul>
+          <li>Built the weather app using Python.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Python</p>
+      </div>
+    </div>
+  </div>
+  
